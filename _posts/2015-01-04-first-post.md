@@ -4,8 +4,10 @@ title: First post!
 image: /img/hello_world.jpeg
 ---
 
-{{ file.extname }}
-
+{% assign image_files = site.static_files | where: "image", true %}
+{% for myimage in image_files %}
+  {{ myimage.path }}
+{% endfor %}
 \
 [markdown]({{ site.url }}/pdf/28_selected_duets_for_two_saxophones_or_oboes_intermediate_advanced.pdf)\
 [markdown]({{ site.url }}/pdf/clinical_and_investigative_features_of_cardiac_pathology_congenital_heart_disease.pdf)\
