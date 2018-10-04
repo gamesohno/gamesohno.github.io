@@ -4,7 +4,7 @@ title: First post!
 image: /img/hello_world.jpeg
 ---
 
-{{ site.static_files }}
+{{ file.extname }}
 
 \
 [markdown]({{ site.url }}/pdf/28_selected_duets_for_two_saxophones_or_oboes_intermediate_advanced.pdf)\
